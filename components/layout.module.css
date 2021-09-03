@@ -1,8 +1,9 @@
 .container {
-  max-width: 36rem;
+  background-color: #fafafa;
+  max-width: 56rem;
   padding: 0 1rem;
   margin: 3rem auto 6rem;
-  outline: 1px solid red;
+  outline: 3px solid red;
 }
 .header {
   display: flex;
@@ -13,3 +14,10 @@
 .backToHome {
   margin: 3rem 0 0;
 }
+
+
+
+.ant-table.ant-table-small tr td {
+    padding: 0px!important;
+}
+
