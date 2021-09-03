@@ -45,17 +45,6 @@ export default function Home() {
 
 	if (error) return <div>Failed to load</div>;
 	if (!data) return <div>Loading...</div>;
-	console.log(data);
-
-	const DATA = [
-		{ x: 10, y: 20 },
-		{ x: 20, y: 50 },
-		{ x: 80, y: 90 },
-	];
-
-	const changeStroke = () => {
-		d3.select(".target").style("stroke-width", 5);
-	};
 
 	return (
 		<Layout home>
@@ -120,11 +109,11 @@ export default function Home() {
 						issues when I did create API route in the Next.js fashion...
 					</Paragraph>
 					<Paragraph>
-						All very rushed now.. I have to stop :) Please{" "}
+						Time now means I have to stop :) Please{" "}
 						<Link href={`/polluters`}>
 							<a>Click Here</a>
 						</Link>{" "}
-						to View the work I have done. Or Click the 'Polluters' link to the
+						to View the work I have done. Or Click the 'Polluters' link in the
 						top nav menu.
 					</Paragraph>
 				</Typography>

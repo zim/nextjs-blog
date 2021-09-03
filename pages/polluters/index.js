@@ -600,8 +600,8 @@ export default function Polluters(props) {
 				<Title level={2}>Scrollable Table</Title>
 				<Paragraph>
 					Here is a table showing the top 20 polluting companies. Scroll the
-					table left and you will see more information. Click on the Compnay
-					name to see a more detailed view
+					table left and you will see more information. Click on the Company
+					name to see a more detailed view.
 				</Paragraph>
 			</Typography>
 
@@ -626,7 +626,8 @@ export default function Polluters(props) {
 				<Title level={2}>Bar Chart One</Title>
 				<Paragraph>
 					Here is an incomplete bar chart showing the top 20 polluting companies
-					Revenue in 2018.
+					Revenue in 2018. In Billions. I have not had time to add the
+					formatting for the currency and bn.
 				</Paragraph>
 			</Typography>
 			<BarChartOne dataSource={graphData} />
@@ -634,7 +635,9 @@ export default function Polluters(props) {
 				<Title level={2}>Bar Chart Two</Title>
 				<Paragraph>
 					Here is an incomplete bar chart showing the top 20 polluting companies
-					CEO pay in 2018.
+					CEO pay in 2018. In Millions. I have not had time to add the
+					formatting for the currency and m. I have not replaced 0 with
+					"undisclosed" or dealt with the NaN due to time constraints.
 				</Paragraph>
 			</Typography>
 			<BarChartOne dataSource={newdataPay} />

@@ -38,12 +38,14 @@ export default function Polluter() {
 			<main>
 				<Typography>
 					<h1 className="title">{data.Name}</h1>
-					<Link href="/polluters">
-						<a>Back</a>
-					</Link>
+
 					<Card
 						title={data.Name}
-						extra={<a href="/polluters">More</a>}
+						extra={
+							<Link href="/polluters">
+								<a>Back</a>
+							</Link>
+						}
 						style={{ width: "100%" }}
 					>
 						<p className="title">Rank</p>
