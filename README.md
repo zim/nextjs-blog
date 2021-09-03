@@ -16,7 +16,7 @@ Having installed ant.design, which is a library I have not used before, and atte
 
 I have used the Table component and did implement some of the nice features this component has including scrolling and fixed columns... there are many many more that I had wanted to implement. Sorting and filtering of course (but again time constraints stopped me pursuing this for too long unfortunately)
 
-## pie-cahart-one.js Component
+## pie-chart-one.js Component
 
 I did cheat by creating an array of data in the scheme that I needed. If I had more time I would have created some util functions similar to `string-to-number.js` and `string-to-pay.js` to extract and reduce the array that was provided..
 
