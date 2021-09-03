@@ -1,14 +1,20 @@
 This is a starter template for [Learn Next.js](https://nextjs.org/learn).
 
-# nextjs-blog
+# Carbon INtelligence Tech Text
 
 There is so much more that I wanted to do.
 
-The General styling is very poor as I did not have time to do this aspect.
+The General styling is very poor as I did not have time to address this aspect. Having installed ant.design and attempted to use the grid system. I came across problems with the Grid system of ant.design so moved forward without this in place so there is a lack of responsive layout which I would have aquired from this...
 
-It is the case that this is one of my earliest Next.js implemantaions... And I must say there are some very nice things tp sauy about the framework / environment.
+It is the case that this is one of my earliest Next.js implemantaions... And I must say there are some very nice things tp say about the framework / environment.
 
-My time was largely taken getting up to speed on some of the features of Next.js, as well as gettting D3, ant.design in place. And to reaquaint myself with the syntax of creating D3 visualizations. and to investigate the great components in ant.design, which I have not used before, having spent some tie looking at Material.UI. It was very nice to get the comparison of the f2 component libraies.
+My time was largely taken getting up to speed on some of the features of Next.js, as well as gettting D3, ant.design in place. And to reaquaint myself with the syntax of creating D3 visualizations. And to investigate the great components in ant.design, which I have not used before, having spent some time looking at Material.UI. It was very nice to get the comparison of the f2 component libraies.
+
+I have used the Table component and did implement someof the nice featues this component has including scrolling and fixed columns... there are many many miore that I had wanted to implement. Sorting and filtering of course (but again time constraints stopped me pursuing this for too long iunfortunately)
+
+## for the pie-cahart-one.js Component
+
+I did cheat bu creating an array of data in the scheme that I needed. If i had more time I would have created some util functins similar to `string-to-number.js` and `string-to-pay.js`
 
 ## Updating to New Releases
 
