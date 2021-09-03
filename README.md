@@ -1,6 +1,27 @@
 # Carbon Intelligence: Front End Developer Technical Test
 
-It is the case that this is one of my earliest Next.js implemantaions (I must say there are some very nice things tp say about the framework/environment).
+This project was bootstrapped with Next.js.
+
+## Getting Started
+
+```
+git clone https://github.com/zim/nextjs-blog.git
+cd nextjs-blog
+npm i && npm run dev
+```
+
+## Use correct version of NODE.js
+
+```
+nvm use 13.12.
+```
+
+It is the case that this is one of my earliest Next.js implemantaions.
+
+Once the repo is cloned please
+
+cd into directory
+and run the foollowing commands
 
 There is so much more that I wanted to do.... Unfortunately time constraints mean ....
 
