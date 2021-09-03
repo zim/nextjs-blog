@@ -24,4 +24,4 @@ I did cheat by creating an array of data in the scheme that I needed. If I had m
 
 I had to add `polluter_data` as a hard coded array, as I has some issues when I did create API route in the Next.js fashion...
 
-All very rushed now.. I have to stop :)
+Time constraints mean I have to stop now.
