@@ -3,19 +3,12 @@ import React, { useState, useEffect, useRef } from "react";
 import * as d3 from "d3";
 
 const drawChart = (chartDivRef, svgRef) => {
-	console.log(svgRef);
-	console.log(d3);
-
-	const width = 800,
+	const width = 1000,
 		height = 600,
 		radius = 200,
 		colors = d3.schemeCategory10;
-	console.log(colors);
-	console.log(d3.schemeYlOrBr[9]);
 
 	const colorsAll = [...colors, ...d3.schemeSet3];
-
-	console.log(colorsAll);
 
 	const piedata = [
 		{
@@ -147,7 +140,6 @@ const drawChart = (chartDivRef, svgRef) => {
 			.attr("fill", colorsAll[i.index]);
 
 		var b = i.data.label.split(",");
-		console.log(b);
 
 		svg
 			.select(".main-legend")
@@ -171,9 +163,6 @@ const drawChart = (chartDivRef, svgRef) => {
 	}
 
 	function onMouseOut(d, i) {
-		console.log(i);
-		console.log(d);
-
 		svg
 			.select(".main-legend")
 			.select(".legend-title")
@@ -197,7 +186,6 @@ const drawChart = (chartDivRef, svgRef) => {
 	}
 
 	const pie = d3.pie().value(function (d) {
-		console.log(d.value);
 		return d.value;
 	});
 
@@ -251,14 +239,9 @@ const drawChart = (chartDivRef, svgRef) => {
 		.select(getParent)
 		.append("text")
 		.text(function (d) {
-			console.log(d);
-			// return "• " + d.data.label;
-			return `${d.data.label} : 23.5% of global total`;
+			return `${d.data.label} : ${d.data.value}m tonnes of CO2`;
 		})
 
-		// .attr("fill", function (d, i) {
-		// 	return colorsAll[i];
-		// })
 		.attr("x", (d, i) => 495)
 		.attr("y", function (d, i) {
 			return 23 * (i + 1);

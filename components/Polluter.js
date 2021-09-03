@@ -1,7 +1,6 @@
 import Link from "next/link";
 
 export default function Polluter({ polluter }) {
-	// console.log(polluter);
 	return (
 		<li>
 			<Link

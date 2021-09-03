@@ -51,15 +51,11 @@ export default function Home() {
 			<section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
 				<Typography>
 					<Title>Frontend Developer Technical Test</Title>
-					<Paragraph>
-						It is the case that this is one of my earliest Next.js
-						implemantaions (I must say there are some very nice things tp say
-						about the framework/environment).
-					</Paragraph>
-					<Paragraph>
+
+					<Title level={2}>
 						There is so much more that I wanted to do.... Unfortunately time
 						constraints mean ....
-					</Paragraph>
+					</Title>
 					<Paragraph>
 						My time was largely taken getting up to speed on some of the
 						features of `Next.js`, as well as gettting `D3`, `Ant Design React`
@@ -69,10 +65,10 @@ export default function Home() {
 						`Material.UI`). It was very nice to get the comparison of the 2
 						component libraries.
 					</Paragraph>
-					<Paragraph>
+					<Title level={2}>
 						## Why the general lack of styling ( particularly responsive stying
 						)
-					</Paragraph>
+					</Title>
 					<Paragraph>
 						The General styling is very poor as I did not have time to properly
 						structure this.... and the fact that there are many options with
@@ -88,7 +84,7 @@ export default function Home() {
 						as mentioned Next.js does use a library called styled-jsx.. too many
 						options for such a short time.
 					</Paragraph>
-					<Paragraph>## Ant Design Table</Paragraph>
+					<Title level={2}>## Ant Design Table</Title>
 					<Paragraph>
 						I have used the Table component and did implement some of the nice
 						features this component has including scrolling and fixed columns...
@@ -96,16 +92,16 @@ export default function Home() {
 						filtering of course (but again time constraints stopped me pursuing
 						this for too long unfortunately)
 					</Paragraph>
-					<Paragraph>## pie-cahart-one.js Component</Paragraph>
+					<Title level={2}>## pie-cahart-one.js Component</Title>
 					<Paragraph>
 						I did cheat by creating an array of data in the scheme that I
 						needed. If I had more time I would have created some util functions
 						similar to `string-to-number.js` and `string-to-pay.js` to extract
-						and reduce the array that was provided..
+						and reduce the array that was provided.
 					</Paragraph>
-					<Paragraph>## Next.js API routes</Paragraph>
+					<Title level={2}>## Next.js API routes</Title>
 					<Paragraph>
-						I had to add `polluter_data` as a hard coded array, as I has some
+						I had to add `polluter_data` as a hard coded array, as I had some
 						issues when I did create API route in the Next.js fashion...
 					</Paragraph>
 					<Paragraph>

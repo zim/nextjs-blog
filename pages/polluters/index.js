@@ -510,15 +510,12 @@ export default function Polluters(props) {
 	const [selectedRowKeys, setSelectedRowKeys] = useState([]);
 
 	const newdataRevenue = polluter_data.reduce((acc, curr, i) => {
-		console.log(curr);
 		acc.push({ id: curr.Name, value: stringToNumber(curr.Revenue) });
 
 		return acc;
 	}, []);
-	console.log(newdataRevenue);
 
 	const [graphData, setGraphData] = useState(newdataRevenue);
-	console.log(graphData);
 
 	const newdataPay = polluter_data.reduce((acc, curr, i) => {
 		acc.push({ id: curr.Name, value: stringToPay(`${curr["CEO pay"]}`) });
@@ -618,7 +615,12 @@ export default function Polluters(props) {
 				<Title level={2}>Pie Chart</Title>
 				<Paragraph>
 					Here is a pie chart showing the top 20 polluting companies Global
-					emissions 1965-2017. Mouse over slices or legend to see more
+					emissions 1965-2017. Mouse over slices or legend to see more. I have
+					not had time to find solution to the center circle and text size issue
+					on those companies with long names. Also there are certainly usability
+					and accessability issues with the text colours and background colours
+					in some instances. So a better thought out colour pallette is
+					necessary.
 				</Paragraph>
 			</Typography>
 			<PieChartOne />

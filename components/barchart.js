@@ -27,13 +27,10 @@ import * as d3 from "d3";
 // }
 
 const drawChart = (svgRef) => {
-	console.log(svgRef);
 	const data = [12, 5, 6, 6, 9, 10];
 	const h = 220;
 	const w = 650;
 	const svg = d3.select(svgRef["current"]);
-
-	console.log(svgRef);
 
 	svg
 		.attr("width", w)

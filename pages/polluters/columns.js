@@ -2,8 +2,6 @@ import Link from "next/link";
 import { Space } from "antd";
 import { stringToNumber } from "../../utils";
 
-// console.log(stringToNumber("ththt eieie"));
-
 export const columns = [
 	{
 		title: "",

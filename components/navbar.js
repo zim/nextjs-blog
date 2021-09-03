@@ -29,7 +29,6 @@ export default function NavBar({ links }) {
 		);
 		setDate(value);
 	};
-	// console.log(links);
 	return (
 		<>
 			<Menu mode="horizontal">
