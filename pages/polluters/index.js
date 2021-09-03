@@ -4,33 +4,12 @@ import Head from "next/head";
 import Link from "next/link";
 import { stringToNumber, stringToPay } from "../../utils";
 import Layout from "../../components/layout";
-import BarChart from "../../components/barchart";
 import BarChartOne from "../../components/barchart-one";
-import PieChart from "../../components/pie-chart";
 import PieChartOne from "../../components/pie-chart-one";
 import useSWR from "swr";
 import Polluter from "../../components/Polluter";
-import styles from "../../styles/Table.module.css";
 
-import daysOfWeek from "../../utils/daysOfWeek";
-
-console.log(daysOfWeek);
-console.log(daysOfWeek.get(2));
-
-import {
-	Button,
-	DatePicker,
-	Menu,
-	version,
-	message,
-	Typography,
-	Divider,
-	Row,
-	Col,
-	Table,
-	Tag,
-	Space,
-} from "antd";
+import { Typography, Table } from "antd";
 import {
 	HomeOutlined,
 	SettingFilled,
@@ -42,20 +21,20 @@ import { columns } from "./columns";
 
 const { Title, Paragraph, Text } = Typography;
 
-const fetcher = (url) => fetch(url).then((res) => res.json());
+// const fetcher = (url) => fetch(url).then((res) => res.json());
 
-const dataGraph1 = [
-	{ id: "Robotics", value: 20, count: 10 },
-	{ id: "D3", value: 30, count: 20 },
-	{ id: "Digital Media", value: 32, count: 20 },
-	{ id: "Machine Learning", value: 38, count: 20 },
-	{ id: "Big Data", value: 40, count: 20 },
-	{ id: "Gaming", value: 46, count: 20 },
-	{ id: "Cloud", value: 56, count: 20 },
-	{ id: "Internet of Things", value: 60, count: 20 },
-	{ id: "Biosmilars", value: 62, count: 30 },
-	{ id: "Artificial Intelligence", value: 68, count: 20 },
-];
+// const dataGraph1 = [
+// 	{ id: "Robotics", value: 20, count: 10 },
+// 	{ id: "D3", value: 30, count: 20 },
+// 	{ id: "Digital Media", value: 32, count: 20 },
+// 	{ id: "Machine Learning", value: 38, count: 20 },
+// 	{ id: "Big Data", value: 40, count: 20 },
+// 	{ id: "Gaming", value: 46, count: 20 },
+// 	{ id: "Cloud", value: 56, count: 20 },
+// 	{ id: "Internet of Things", value: 60, count: 20 },
+// 	{ id: "Biosmilars", value: 62, count: 30 },
+// 	{ id: "Artificial Intelligence", value: 68, count: 20 },
+// ];
 
 const dataGraph2 = [
 	{
@@ -658,13 +637,6 @@ export default function Polluters(props) {
 					table left and you will see more information.
 				</Paragraph>
 			</Typography>
-			<button
-				onClick={() => {
-					changeData();
-				}}
-			>
-				CEO Pay
-			</button>
 
 			<PieChartOne />
 			<BarChartOne dataSource={graphData} />
@@ -679,8 +651,6 @@ export default function Polluters(props) {
 					record["Projected future emissions 2018-30"] > 20 ? "red" : "green";
 				}}
 			/>
-
-			<TextInputWithFocusButton />
 
 			<style jsx>{`
 				@media (max-width: 600px) {

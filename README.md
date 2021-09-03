@@ -4,9 +4,9 @@ It is the case that this is one of my earliest Next.js implemantaions (I must sa
 
 There is so much more that I wanted to do.... Unfortunately time constraints mean ....
 
-My time was largely taken getting up to speed on some of the features of `Next.js`, as well as gettting `D3`, `Ant Design React` in place. And to re aquaint myself with the syntax of creating D3 visualizations. And to investigate the many great components in ant.design (having spent some time looking at/working with Material.UI). It was very nice to get the comparison of the 2 component libraies.
+My time was largely taken getting up to speed on some of the features of `Next.js`, as well as gettting `D3`, `Ant Design React` in place. And to re aquaint myself with the syntax of creating D3 visualizations. And to investigate the many great components in ant.design (having spent some time looking at/working with `Material.UI`). It was very nice to get the comparison of the 2 component libraries.
 
-## Why the general styling and lack of responsive stying (excuses)
+## Why the general lack of styling ( particularly responsive stying )
 
 The General styling is very poor as I did not have time to properly structure this.... and the fact that there are many options with csss and Next.js in particular as it has built in support for CSS and SASS....
 
@@ -18,10 +18,10 @@ I have used the Table component and did implement some of the nice features this
 
 ## pie-cahart-one.js Component
 
-I did cheat bu creating an array of data in the scheme that I needed. If i had more time I would have created some util functions similar to `string-to-number.js` and `string-to-pay.js` to extract to reduce the array that was provided..
+I did cheat by creating an array of data in the scheme that I needed. If I had more time I would have created some util functions similar to `string-to-number.js` and `string-to-pay.js` to extract to reduce the array that was provided..
 
 ## Next.js API routes
 
-Ihad to add `polluter_data` as a hard coded array,a s I has some issues when I did create API route in the Next.js fashion...
+I had to add `polluter_data` as a hard coded array, as I has some issues when I did create API route in the Next.js fashion...
 
 All very rushed now.. I have to stop :)

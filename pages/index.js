@@ -21,26 +21,26 @@ import {
 	LoadingOutlined,
 } from "@ant-design/icons";
 
-import { getSortedPostsData } from "../lib/posts";
+// import { getSortedPostsData } from "../lib/posts";
 import Link from "next/link";
 import Date from "../components/date";
 import useSWR from "swr";
-import Person from "../components/Person";
+// import Person from "../components/Person";
 
 const { Title, Paragraph, Text } = Typography;
 
 const fetcher = (url) => fetch(url).then((res) => res.json());
 
-export async function getStaticProps() {
-	const allPostsData = getSortedPostsData();
-	return {
-		props: {
-			allPostsData,
-		},
-	};
-}
+// export async function getStaticProps() {
+// 	const allPostsData = getSortedPostsData();
+// 	return {
+// 		props: {
+// 			allPostsData,
+// 		},
+// 	};
+// }
 
-export default function Home({ allPostsData }) {
+export default function Home() {
 	const { data, error } = useSWR("/api/people", fetcher);
 
 	if (error) return <div>Failed to load</div>;
@@ -53,40 +53,6 @@ export default function Home({ allPostsData }) {
 		{ x: 80, y: 90 },
 	];
 
-	// useEffect(() => {
-	// 	console.log("useEffect 1");
-	// 	// d3.select(".target").style("stroke-width", 5);
-	// 	const margin = { top: 10, right: 40, bottom: 30, left: 30 },
-	// 		width = 450 - margin.left - margin.right,
-	// 		height = 200 - margin.top - margin.bottom;
-
-	// 	const svg = d3
-	// 		.select("#area")
-	// 		.append("svg")
-	// 		.attr("width", width + margin.left + margin.right)
-	// 		.attr("height", height + margin.top + margin.bottom)
-	// 		.append("g")
-	// 		.attr("transform", `translate(${margin.left}, ${margin.top})`);
-
-	// 	const x = d3.scaleLinear().domain([0, 100]).range([0, width]);
-	// 	svg
-	// 		.append("g")
-	// 		.attr("transform", `translate(0, ${height})`)
-	// 		.call(d3.axisBottom(x));
-
-	// 	const y = d3.scaleLinear().domain([0, 100]).range([height, 0]);
-	// 	svg.append("g").call(d3.axisLeft(y));
-
-	// 	svg
-	// 		.selectAll("whatever")
-	// 		.data(DATA)
-	// 		.enter()
-	// 		.append("circle")
-	// 		.attr("cx", (d) => x(d.x))
-	// 		.attr("cy", (d) => y(d.y))
-	// 		.attr("r", 7);
-	// }, []);
-
 	const changeStroke = () => {
 		d3.select(".target").style("stroke-width", 5);
 	};
@@ -94,18 +60,6 @@ export default function Home({ allPostsData }) {
 	return (
 		<Layout home>
 			<section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-				<button onClick={changeStroke}>change stroke</button>
-				<svg>
-					<circle
-						class="target"
-						style={{ fill: "green" }}
-						stroke="black"
-						cx={50}
-						cy={50}
-						r={40}
-					></circle>
-				</svg>
-				<svg id="area" height={200} width={450}></svg>
 				<Typography>
 					<Title>Frontend Developer Technical Test</Title>
 					<Paragraph>
@@ -162,22 +116,6 @@ export default function Home({ allPostsData }) {
 						this, but have fun with it.
 					</Paragraph>
 				</Typography>
-
-				<h2 className={utilStyles.headingLg}>Blog</h2>
-
-				<ul className={utilStyles.list}>
-					{allPostsData.map(({ id, date, title }) => (
-						<li className={utilStyles.listItem} key={id}>
-							<Link href={`/posts/${id}`}>
-								<a>{title}</a>
-							</Link>
-							<br />
-							<small className={utilStyles.lightText}>
-								<Date dateString={date} />
-							</small>
-						</li>
-					))}
-				</ul>
 			</section>
 		</Layout>
 	);

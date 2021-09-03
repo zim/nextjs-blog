@@ -46,19 +46,12 @@ export const columns = [
 		key: "revenue",
 		dataIndex: "Revenue",
 		render(text, record) {
-			// console.log(text);
-			// console.log(typeof text);
-			// console.log(stringToNumber(text));
-			// 			console.log(text.match(§([^;] *)));
 			stringToNumber(text);
-			// text.match("§([^;] *);");
-			// var extract = text.match(/$(.*)"bn"/);
-			// console.log(extract);
 
 			return {
-				props: {
-					style: { background: parseInt(text) < 100000 ? "red" : "green" },
-				},
+				// props: {
+				// 	style: { background: parseInt(text) < 100000 ? "red" : "green" },
+				// },
 				children: <div>{text}</div>,
 			};
 		},
@@ -86,9 +79,9 @@ export const columns = [
 		dataIndex: "Fossil fuel production",
 		render(text, record) {
 			return {
-				props: {
-					style: { background: parseInt(text) > 3 ? "red" : "green" },
-				},
+				// props: {
+				// 	style: { background: parseInt(text) > 3 ? "red" : "green" },
+				// },
 				children: <div>{text}</div>,
 			};
 		},
@@ -106,12 +99,10 @@ export const columns = [
 		ellipsis: true,
 
 		render(text, record) {
-			// console.log(text);
-			// console.log(typeof text);
 			return {
-				props: {
-					style: { background: parseInt(text) > 30 ? "red" : "green" },
-				},
+				// props: {
+				// 	style: { background: parseInt(text) > 30 ? "red" : "green" },
+				// },
 				children: <div>{text}</div>,
 			};
 		},
@@ -124,9 +115,9 @@ export const columns = [
 		sorter: (a, b) => a.text - b.text,
 		render(text, record) {
 			return {
-				props: {
-					style: { background: parseInt(text) > 10 ? "red" : "green" },
-				},
+				// props: {
+				// 	style: { background: parseInt(text) > 10 ? "red" : "green" },
+				// },
 				children: <div>{text}</div>,
 			};
 		},
@@ -138,9 +129,9 @@ export const columns = [
 		ellipsis: true,
 		render(text, record) {
 			return {
-				props: {
-					style: { background: parseInt(text) > 734 ? "red" : "green" },
-				},
+				// props: {
+				// 	style: { background: parseInt(text) > 734 ? "red" : "green" },
+				// },
 				children: <div>{text}</div>,
 			};
 		},
