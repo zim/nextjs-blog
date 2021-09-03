@@ -20,11 +20,6 @@ nvm use 13.12.
 
 It is the case that this is one of my earliest Next.js implemantaions.
 
-Once the repo is cloned please
-
-cd into directory
-and run the foollowing commands
-
 There is so much more that I wanted to do.... Unfortunately time constraints mean ....
 
 My time was largely taken getting up to speed on some of the features of `Next.js`, as well as gettting `D3`, `Ant Design React` in place. And to re aquaint myself with the syntax of creating D3 visualizations. And to investigate the many great components in ant.design (having spent some time looking at/working with `Material.UI`). It was very nice to get the comparison of the 2 component libraries.
