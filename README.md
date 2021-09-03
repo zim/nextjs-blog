@@ -10,6 +10,8 @@ cd nextjs-blog
 npm i && npm run dev
 ```
 
+Then browse to http://localhost:3000
+
 ## Use correct version of NODE.js
 
 ```
