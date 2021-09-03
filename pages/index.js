@@ -63,57 +63,69 @@ export default function Home() {
 				<Typography>
 					<Title>Frontend Developer Technical Test</Title>
 					<Paragraph>
-						Thank you for applying to join the Technology Team here at Carbon
-						Intelligence, our mission is to help our clients to reduce their
-						greenhouse gas footprint and we do that by processing their resource
-						usage data, calculating their emissions and delivering interventions
-						that reduce their impact on the environment. We’re very proud of the
-						culture in our team and the great tools that we’ve built - we’d
-						really like you to join us on our journey!
+						It is the case that this is one of my earliest Next.js
+						implemantaions (I must say there are some very nice things tp say
+						about the framework/environment).
 					</Paragraph>
 					<Paragraph>
-						Carbon Intelligence’s tech stack is based on a Python / Django
-						backend using a Postgres database running in AWS and React as our
-						frontend framework (using typescript and this component library:
-						https://ant.design/).
+						There is so much more that I wanted to do.... Unfortunately time
+						constraints mean ....
 					</Paragraph>
 					<Paragraph>
-						For this test we have provided a publicly available dataset that
-						lists the world’s top 20 polluters, the data should be easy to
-						understand. Your challenge: please display this in an interesting
-						and interactive way.
-					</Paragraph>
-					<Paragraph>What we are looking for:</Paragraph>
-					<Paragraph>Are you a good coder?</Paragraph>
-					<Paragraph>
-						Is your code easy to read, well structured, do you know how to write
-						unit tests?
-					</Paragraph>
-					<Paragraph>Do you know React?</Paragraph>
-					<Paragraph>
-						Are your components well structured, reusable and take advantage of
-						React’s features?
-					</Paragraph>
-					<Paragraph>Are you a frontend specialist?</Paragraph>
-					<Paragraph>
-						Do you understand how to design for a browser? Does it look slick?
-						Do you like CSS?
-					</Paragraph>
-					<Paragraph>Do you understand users?</Paragraph>
-					<Paragraph>
-						Does your application make sense? Is it obvious how to use it? Is it
-						engaging and fun?
-					</Paragraph>
-					<Paragraph>Are you creative?</Paragraph>
-					<Paragraph>
-						Does your application sizzle? We’re looking for originality,
-						interactivity, animation, transitions.
+						My time was largely taken getting up to speed on some of the
+						features of `Next.js`, as well as gettting `D3`, `Ant Design React`
+						in place. And to re aquaint myself with the syntax of creating D3
+						visualizations. And to investigate the many great components in
+						ant.design (having spent some time looking at/working with
+						`Material.UI`). It was very nice to get the comparison of the 2
+						component libraries.
 					</Paragraph>
 					<Paragraph>
-						Check your code into github and send us the link. If we have any
-						questions we’ll create an issue. We appreciate that you are busy so
-						we’re not expecting you to spend more than a couple of hours on
-						this, but have fun with it.
+						## Why the general lack of styling ( particularly responsive stying
+						)
+					</Paragraph>
+					<Paragraph>
+						The General styling is very poor as I did not have time to properly
+						structure this.... and the fact that there are many options with
+						csss and Next.js in particular as it has built in support for CSS
+						and SASS....
+					</Paragraph>
+					<Paragraph>
+						Having installed ant.design, which is a library I have not used
+						before, and attempted to use the grid system, I came across problems
+						so moved forward without this in place so there is a lack of
+						responsive layout which I had hoped to have aquired from this...
+						Also I had teething problems with Ant Design Nav components... Also
+						as mentioned Next.js does use a library called styled-jsx.. too many
+						options for such a short time.
+					</Paragraph>
+					<Paragraph>## Ant Design Table</Paragraph>
+					<Paragraph>
+						I have used the Table component and did implement some of the nice
+						features this component has including scrolling and fixed columns...
+						there are many many more that I had wanted to implement. Sorting and
+						filtering of course (but again time constraints stopped me pursuing
+						this for too long unfortunately)
+					</Paragraph>
+					<Paragraph>## pie-cahart-one.js Component</Paragraph>
+					<Paragraph>
+						I did cheat by creating an array of data in the scheme that I
+						needed. If I had more time I would have created some util functions
+						similar to `string-to-number.js` and `string-to-pay.js` to extract
+						and reduce the array that was provided..
+					</Paragraph>
+					<Paragraph>## Next.js API routes</Paragraph>
+					<Paragraph>
+						I had to add `polluter_data` as a hard coded array, as I has some
+						issues when I did create API route in the Next.js fashion...
+					</Paragraph>
+					<Paragraph>
+						All very rushed now.. I have to stop :) Please{" "}
+						<Link href={`/polluters`}>
+							<a>Click Here</a>
+						</Link>{" "}
+						to View the work I have done. Or Click the 'Polluters' link to the
+						top nav menu.
 					</Paragraph>
 				</Typography>
 			</section>

@@ -1,5 +1,6 @@
 import { useRouter } from "next/router";
 import Head from "next/head";
+import Link from "next/link";
 import useSWR from "swr";
 import { Card, Typography } from "antd";
 import Layout from "../../../components/layout";
@@ -37,10 +38,12 @@ export default function Polluter() {
 			<main>
 				<Typography>
 					<h1 className="title">{data.Name}</h1>
-
+					<Link href="/polluters">
+						<a>Back</a>
+					</Link>
 					<Card
 						title={data.Name}
-						extra={<a href="#">More</a>}
+						extra={<a href="/polluters">More</a>}
 						style={{ width: "100%" }}
 					>
 						<p className="title">Rank</p>

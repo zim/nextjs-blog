@@ -18,7 +18,7 @@ I have used the Table component and did implement some of the nice features this
 
 ## pie-cahart-one.js Component
 
-I did cheat by creating an array of data in the scheme that I needed. If I had more time I would have created some util functions similar to `string-to-number.js` and `string-to-pay.js` to extract to reduce the array that was provided..
+I did cheat by creating an array of data in the scheme that I needed. If I had more time I would have created some util functions similar to `string-to-number.js` and `string-to-pay.js` to extract and reduce the array that was provided..
 
 ## Next.js API routes
 

@@ -36,88 +36,88 @@ const { Title, Paragraph, Text } = Typography;
 // 	{ id: "Artificial Intelligence", value: 68, count: 20 },
 // ];
 
-const dataGraph2 = [
-	{
-		id: "Saudi Aramco, Saudi Arabia",
-		value: 0,
-	},
-	{
-		id: "Chevron, US",
-		value: 20.6,
-	},
-	{
-		id: "Gazprom, Russia",
-		value: null,
-	},
-	{
-		id: "ExxonMobil, US",
-		value: 18.8,
-	},
-	{
-		id: "National Iranian Oil Co",
-		value: 0,
-	},
-	{
-		id: "BP, UK",
-		value: 14.7,
-	},
-	{
-		id: "Royal Dutch Shell, Netherlands",
-		value: 22,
-	},
-	{
-		id: "Coal India, India",
-		value: null,
-	},
-	{
-		id: "Pemex, Mexico",
-		value: 0,
-	},
-	{
-		id: "Petróleos de Venezuela (PDVSA)",
-		value: 0,
-	},
-	{
-		id: "PetroChina",
-		value: 0,
-	},
-	{
-		id: "Peabody Energy, US",
-		value: 7.3,
-	},
-	{
-		id: "ConocoPhillips, US",
-		value: 23.4,
-	},
-	{
-		id: "Abu Dhabi National Oil Company",
-		value: 0,
-	},
-	{
-		id: "Kuwait Petroleum Corporation, Kuwait",
-		value: 0,
-	},
-	{
-		id: "Iraq National Oil Co, Iraq",
-		value: 0,
-	},
-	{
-		id: "Total SA, France",
-		value: 3.55,
-	},
-	{
-		id: "Sonatrach, Algeria",
-		value: 0,
-	},
-	{
-		id: "BHP Billiton, Australia",
-		value: 3.5,
-	},
-	{
-		id: "Petrobras, Brazil",
-		value: 0,
-	},
-];
+// const dataGraph2 = [
+// 	{
+// 		id: "Saudi Aramco, Saudi Arabia",
+// 		value: 0,
+// 	},
+// 	{
+// 		id: "Chevron, US",
+// 		value: 20.6,
+// 	},
+// 	{
+// 		id: "Gazprom, Russia",
+// 		value: null,
+// 	},
+// 	{
+// 		id: "ExxonMobil, US",
+// 		value: 18.8,
+// 	},
+// 	{
+// 		id: "National Iranian Oil Co",
+// 		value: 0,
+// 	},
+// 	{
+// 		id: "BP, UK",
+// 		value: 14.7,
+// 	},
+// 	{
+// 		id: "Royal Dutch Shell, Netherlands",
+// 		value: 22,
+// 	},
+// 	{
+// 		id: "Coal India, India",
+// 		value: null,
+// 	},
+// 	{
+// 		id: "Pemex, Mexico",
+// 		value: 0,
+// 	},
+// 	{
+// 		id: "Petróleos de Venezuela (PDVSA)",
+// 		value: 0,
+// 	},
+// 	{
+// 		id: "PetroChina",
+// 		value: 0,
+// 	},
+// 	{
+// 		id: "Peabody Energy, US",
+// 		value: 7.3,
+// 	},
+// 	{
+// 		id: "ConocoPhillips, US",
+// 		value: 23.4,
+// 	},
+// 	{
+// 		id: "Abu Dhabi National Oil Company",
+// 		value: 0,
+// 	},
+// 	{
+// 		id: "Kuwait Petroleum Corporation, Kuwait",
+// 		value: 0,
+// 	},
+// 	{
+// 		id: "Iraq National Oil Co, Iraq",
+// 		value: 0,
+// 	},
+// 	{
+// 		id: "Total SA, France",
+// 		value: 3.55,
+// 	},
+// 	{
+// 		id: "Sonatrach, Algeria",
+// 		value: 0,
+// 	},
+// 	{
+// 		id: "BHP Billiton, Australia",
+// 		value: 3.5,
+// 	},
+// 	{
+// 		id: "Petrobras, Brazil",
+// 		value: 0,
+// 	},
+// ];
 
 const polluter_data = [
 	{
@@ -509,21 +509,6 @@ const rowSelection = {
 export default function Polluters(props) {
 	const [selectedRowKeys, setSelectedRowKeys] = useState([]);
 
-	// console.log(graphData);
-
-	// const { data, error } = useSWR("/api/polluters", fetcher);
-
-	// if (error) return <div>Failed to load</div>;
-	// if (!data) return <div>Loading...</div>;
-	// console.log(data);
-
-	// const newdataUnderscore = data.reduce((acc, curr, i) => {
-	// 	acc.push({ ...curr, computedName: curr[key].replace("", "_") });
-
-	// 	return acc;
-	// }, []);
-	// console.log(newdataUnderscore);
-
 	const newdataRevenue = polluter_data.reduce((acc, curr, i) => {
 		console.log(curr);
 		acc.push({ id: curr.Name, value: stringToNumber(curr.Revenue) });
@@ -540,21 +525,11 @@ export default function Polluters(props) {
 
 		return acc;
 	}, []);
-	console.log(newdataPay);
-
-	// React.useEffect(() => {
-	// 	setGraphData(newdataRevenue);
-	// }, [newdataRevenue]);
 	const onSelectChange = (selectedRowKeys) => {
 		console.log("selectedRowKeys changed: ", selectedRowKeys);
 		// this.setState({ selectedRowKeys });
 		setSelectedRowKeys([selectedRowKeys]);
 	};
-
-	// const rowSelection = {
-	// 	selectedRowKeys,
-	// 	onChange: onSelectChange,
-	// };
 
 	const rowSelection = {
 		selectedRowKeys,
@@ -608,20 +583,11 @@ export default function Polluters(props) {
 		);
 	}
 
-	console.log(polluter_data);
-
 	const barOne = useRef(null);
 
 	const changeData = () => {
-		console.log(newdataPay);
-		// this.setState({ selectedRowKeys });
 		setGraphData(newdataPay);
 	};
-
-	// changeData(newdataRevenue);
-	// React.useEffect(() => {
-	// 	drawChart(svg);
-	// }, [graphData]);
 
 	return (
 		<Layout>
@@ -631,16 +597,13 @@ export default function Polluters(props) {
 			</Head>
 
 			<Typography>
-				<Title level={2}>Polluters</Title>
+				<Title level={2}>Scrollable Table</Title>
 				<Paragraph>
 					Here is a table showing the top 20 polluting companies. Scroll the
-					table left and you will see more information.
+					table left and you will see more information. Click on the Compnay
+					name to see a more detailed view
 				</Paragraph>
 			</Typography>
-
-			<PieChartOne />
-			<BarChartOne dataSource={graphData} />
-			<BarChartOne dataSource={newdataRevenue} />
 
 			<Table
 				columns={columns}
@@ -651,6 +614,30 @@ export default function Polluters(props) {
 					record["Projected future emissions 2018-30"] > 20 ? "red" : "green";
 				}}
 			/>
+			<Typography>
+				<Title level={2}>Pie Chart</Title>
+				<Paragraph>
+					Here is a pie chart showing the top 20 polluting companies Global
+					emissions 1965-2017. Mouse over slices or legend to see more
+				</Paragraph>
+			</Typography>
+			<PieChartOne />
+			<Typography>
+				<Title level={2}>Bar Chart One</Title>
+				<Paragraph>
+					Here is an incomplete bar chart showing the top 20 polluting companies
+					Revenue in 2018.
+				</Paragraph>
+			</Typography>
+			<BarChartOne dataSource={graphData} />
+			<Typography>
+				<Title level={2}>Bar Chart Two</Title>
+				<Paragraph>
+					Here is an incomplete bar chart showing the top 20 polluting companies
+					CEO pay in 2018.
+				</Paragraph>
+			</Typography>
+			<BarChartOne dataSource={newdataPay} />
 
 			<style jsx>{`
 				@media (max-width: 600px) {

@@ -59,7 +59,6 @@ const BarChartOne = ({ dataSource }) => {
 			<div className={`chartValues`} ref={valuesDiv}></div>
 			<style jsx>{`
 				.container {
-					outline: 10px solid green;
 					display: flex;
 					width: 100%;
 				}
@@ -72,7 +71,6 @@ const BarChartOne = ({ dataSource }) => {
 					text-align: right;
 					padding: 3px;
 					margin: 1px;
-					outline: 1px solid yellow;
 				}
 				.bar {
 					font: 10px sans-serif;
@@ -81,7 +79,6 @@ const BarChartOne = ({ dataSource }) => {
 					padding: 3px;
 					margin: 1px;
 					color: white;
-					outline: 1px solid yellow;
 				}
 			`}</style>
 		</div>

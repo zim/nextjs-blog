@@ -3,7 +3,6 @@
   max-width: 56rem;
   padding: 0 1rem;
   margin: 3rem auto 6rem;
-  outline: 3px solid red;
 }
 .header {
   display: flex;
